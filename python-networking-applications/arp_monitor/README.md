@@ -16,7 +16,7 @@ Open PowerShell as Administrator and run this command from the repository root:
 .\.venv\Scripts\python.exe arp_monitor\arp_monitor.py
 ```
 
-The script captures on Scapy's default interface. Output appears when ARP requests are observed; an idle network may produce no output. It stops after 20 captured ARP packets, including replies that are not printed. Press Ctrl+C to stop it earlier.
+The script captures on Scapy's default interface. Output appears when ARP requests are observed. An idle network may produce no output. It stops after 20 captured ARP packets, including replies that are not printed. Press Ctrl+C to stop it earlier.
 
 ## Demonstration
 
