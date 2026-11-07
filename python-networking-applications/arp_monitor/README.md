@@ -30,4 +30,4 @@ A separate ping to `192.168.1.1` returned one reply with a reported round-trip t
 
 ## Limitations and planned improvements
 
-The monitor displays ARP requests; it does not detect spoofing. Interface selection and a capture timeout would make it easier to use on computers with multiple adapters or quiet networks.
+The monitor displays ARP requests and spoofing is not detected. Interface selection and a capture timeout would make it easier to use on computers with multiple adapters or quiet networks.
