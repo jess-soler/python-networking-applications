@@ -12,7 +12,7 @@ Complete the setup in the [main README](../README.md). Open PowerShell as Admini
 .\.venv\Scripts\python.exe subnet_scanner\pythonping_scanner_threaded.py
 ```
 
-Enter the subnet for a network you own or have permission to test, such as `192.168.1.0/24`. Enter a value explicitly; pressing Enter selects the script's default, `10.0.1.0/24`.
+Enter the subnet for a network you own or have permission to test, such as `192.168.1.0/24`. Enter a value explicitly. Pressing Enter selects the script's default: `10.0.1.0/24`.
 
 Answer `n` after the scan. Start a fresh process for each scan because the current repeat-scan option accumulates the response count and creates additional worker threads.
 
@@ -22,13 +22,13 @@ A Windows run against `192.168.1.0/24` reported four responding hosts and comple
 
 ![Completed subnet scan](../docs/screenshots/subnet-scanner.png)
 
-The screenshot uses the original label `Total hosts scanned`; the current code labels this value `Responding hosts`. Hosts that do not answer ICMP may still be present on the network. The elapsed time describes this run only.
+The screenshot uses the original label `Total hosts scanned`. The current code labels this value `Responding hosts`. Hosts that do not answer ICMP may still be present on the network. The elapsed time describes this run only.
 
 ## Limitations and planned improvements
 
 - Reset the response count and reuse workers when repeating scans.
 - Validate subnet input and handle malformed or unsuitable ranges.
-- Add a configurable worker limit; the current implementation starts 254 workers per scan.
+- Add a configurable worker limit, the current implementation starts 254 workers per scan.
 
 ## References
 
